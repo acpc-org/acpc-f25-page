@@ -1,6 +1,6 @@
-import ScheduleBlock from "@/ScheduleBlock/ScheduleBlock"
+import QnA from "@/QnA/QnA";
 
-export default function Schedule() {
+export default function Prizes() {
     return (
         <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
             <div className="items-center justify-items-center">
@@ -12,16 +12,12 @@ export default function Schedule() {
 
                         <p className="font-semibold text-[43px] leading-none">FALL 2025</p>
                         <p className="font-bold text-[48px] leading-none">CONTEST</p>
-                        <p className="font-bold text-[41px] leading-none">SCHEDULE</p>
+                        <p className="font-bold text-[64px] leading-none">PRIZES</p>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <ScheduleBlock when="12pm" what="Arrive at PETR 118"/>
-                        <ScheduleBlock when="12:30pm" what="Pre-contest setup"/>
-                        <ScheduleBlock when="1pm" what="Contest begins"/>
-                        <div className="flex flex-col items-center group">
-                            <ScheduleBlock when="4pm" what="Contest ends"/>
-                            <p className="transition-all opacity-40 group-hover:opacity-100 text-sm">(Eat pizza, discuss solutions, get prizes)</p>
-                        </div>
+                        <QnA question="Grand Prize" answer="iPad" ps={"9th-gen WiFi"}/>
+                        <QnA question="Other Prize" answer="i dont know yet" ps={"please tell me soon"}/>
+                        <QnA question="Misc Prizes" answer="???" ps={"e.g. \"First to solve A\""}/>
                     </div>
                 </div>
 

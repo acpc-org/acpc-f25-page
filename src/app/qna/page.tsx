@@ -1,6 +1,6 @@
-import ScheduleBlock from "@/ScheduleBlock/ScheduleBlock"
+import QnA from "@/QnA/QnA";
 
-export default function Schedule() {
+export default function QnAPage() {
     return (
         <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
             <div className="items-center justify-items-center">
@@ -12,17 +12,17 @@ export default function Schedule() {
 
                         <p className="font-semibold text-[43px] leading-none">FALL 2025</p>
                         <p className="font-bold text-[48px] leading-none">CONTEST</p>
-                        <p className="font-bold text-[41px] leading-none">SCHEDULE</p>
+                        <p className="font-bold text-[31px] leading-none">INFORMATION</p>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <ScheduleBlock when="12pm" what="Arrive at PETR 118"/>
-                        <ScheduleBlock when="12:30pm" what="Pre-contest setup"/>
-                        <ScheduleBlock when="1pm" what="Contest begins"/>
-                        <div className="flex flex-col items-center group">
-                            <ScheduleBlock when="4pm" what="Contest ends"/>
-                            <p className="transition-all opacity-40 group-hover:opacity-100 text-sm">(Eat pizza, discuss solutions, get prizes)</p>
+
+                        <QnA question="Beginner-friendly?" answer="Yes!" ps={"We have problems for all skill levels, from complete beginners to total experts"}/>
+                        <QnA question="Open internet?" answer="Yes*" ps={"*Information from internet must exist prior to contest beginning"}/>
+                        <QnA question="Can I use AI?" answer="No" ps={"No AI use allowed in any way"}/>
+                        <QnA question="Allowed languages?" answer="Basically all" ps={"C++, Python, Java, basically anything on LC/CF"}/>
+                        <QnA question="Is this a team contest?" answer="No" ps={"Please work individually. We have a team contest next semester"}/>
+                        <QnA question="Non-material prizes?" answer="ICPC qualification & CSCE 430 access" ps={"Top performers may be able to force request into 430 and qualify to represent TAMU at ICPC"}/>
                         </div>
-                    </div>
                 </div>
 
             </div>
