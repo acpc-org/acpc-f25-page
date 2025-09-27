@@ -1,5 +1,14 @@
 import QnA from "@/QnA/QnA";
 
+const prize_list = ["iPad",
+    "Airpod Pros",
+    "Bose SoundLink Flex SE Portable Waterproof Bluetooth Speakers",
+    "Gaming Keyboards & Mice",
+    "Lego Sets",
+    "Poker Sets",
+    "Owala Waterbottles",
+    "Jellycat Stuffed Animals"]
+
 export default function Prizes() {
     return (
         <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
@@ -16,7 +25,19 @@ export default function Prizes() {
                     </div>
                     <div className="flex flex-col items-center gap-2">
                         <QnA question="Grand Prize" answer="iPad" ps={"9th-gen WiFi"}/>
-                        <QnA question="Other Prize" answer="i dont know yet" ps={"please tell me soon"}/>
+                        <div className = "flex flex-col items-center group">
+                            <p className="transition-all leading-none text-xl opacity-50 group-hover:opacity-70 text-center">
+                                What else?
+                            </p>
+                            {prize_list.map((item, i) => (
+                                <li className="list-none" key={i}>
+                                    <p className="transition-all leading-none text-xl opacity-80 group-hover:opacity-100 text-center">
+                                        {item}
+                                    </p>
+                                </li>
+                            ))}
+
+                        </div>
                         <QnA question="Misc Prizes" answer="???" ps={"e.g. \"First to solve A\""}/>
                     </div>
                 </div>
