@@ -19,6 +19,7 @@ export default function QnAPage() {
                         <QnA question="Beginner-friendly?" answer="Yes!" ps={"We have problems for all skill levels, from complete beginners to total experts"}/>
                         <QnA question="Open internet?" answer="Yes*" ps={"*Information from internet must exist prior to contest beginning"}/>
                         <QnA question="Can I use AI?" answer="No" ps={"No AI use allowed in any way"}/>
+                        <QnA question="What if I get hungry during the event?" answer="Free snacks!" ps={"We'll have a box of snacks in the room"}/>
                         <QnA question="Allowed languages?" answer="Basically all" ps={"C++, Python, Java, basically anything on LC/CF"}/>
                         <QnA question="Is this a team contest?" answer="No" ps={"Please work individually. We have a team contest next semester"}/>
                         <QnA question="Non-material prizes?" answer="ICPC qualification & CSCE 430 access" ps={"Top performers may be able to force request into 430 and qualify to represent TAMU at ICPC"}/>

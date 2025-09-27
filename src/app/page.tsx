@@ -33,13 +33,13 @@ export default function Home() {
                 </a>
             </div>
             <div className="mt-2 gap-2 items-center justify-items-center p-2 bg-[#ffffffc0] dark:bg-[#000000c0] backdrop-blur-lg border-1 rounded-xl flex flex-row w-fit">
-                <a href="https://tx.ag/acpcdc">
+                <a className="transition-all opacity-70 hover:opacity-100 active:opacity-60 active:scale-90" href="https://tx.ag/acpcdc">
                     <Image src={"/discord.svg"} className="dark:invert" alt="Discord Link" height={20} width={20}/>
                 </a>
-                <a href={"https://tamuacpc.org"}>
+                <a className="transition-all opacity-70 hover:opacity-100 active:opacity-60 active:scale-90" href={"https://tamuacpc.org"}>
                     <Image src={"/globe.svg"} className="dark:invert" alt="Homepage Link" height={20} width={20}/>
                 </a>
-                <a href={"https://www.instagram.com/aggiecompetitiveprogramming/"}>
+                <a className="transition-all opacity-70 hover:opacity-100 active:opacity-60 active:scale-90" href={"https://www.instagram.com/aggiecompetitiveprogramming/"}>
                     <Image src={"/instagram.svg"} className="dark:invert" alt="Instagram Link" height={20} width={20}/>
                 </a>
             </div>
