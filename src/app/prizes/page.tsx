@@ -18,7 +18,7 @@ const categories = ["Overall Top 5",
 export default function Prizes() {
     return (
         <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
-            <div className="items-center justify-items-center">
+            <div className="flex flex-col items-center justify-items-center">
                 <a href={"/"} className="transition-all rounded-2xl bg-[#dddddd] dark:bg-[#222222] p-2 pl-4 pr-4 border-2 border-[#88888850] hover:border-[#888888AA] flex flex-row w-fit group">
                     <p className="transition-all text-clip font-light opacity-50 group-hover:opacity-80 group-hover:scale-[102%] group-active:scale-95 text-[#222222] dark:text-[#DDDDDD] text-xl">Home</p>
                 </a>
@@ -37,7 +37,7 @@ export default function Prizes() {
                             </p>
                             {prize_list.map((item, i) => (
                                 <li className="list-none" key={i}>
-                                    <p className="transition-all leading-none text-xl opacity-80 group-hover:opacity-100 text-center">
+                                    <p className="transition-all leading-tight text-xl opacity-80 group-hover:opacity-100 text-center">
                                         {item}
                                     </p>
                                 </li>
@@ -50,7 +50,7 @@ export default function Prizes() {
                             </p>
                             {categories.map((item, i) => (
                                 <li className="list-none" key={i}>
-                                    <p className="transition-all leading-none text-xl opacity-80 group-hover:opacity-100 text-center">
+                                    <p className="transition-all leading-tight text-xl opacity-80 group-hover:opacity-100 text-center">
                                         {item}
                                     </p>
                                 </li>

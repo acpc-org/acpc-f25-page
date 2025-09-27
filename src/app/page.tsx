@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
-        <div className="items-center justify-items-center">
+        <div className="flex flex-col items-center justify-items-center">
             <div className="mb-4 items-center justify-items-center p-6 bg-[#ffffffc0] dark:bg-[#000000c0] backdrop-blur-lg border-2 rounded-xl">
               <div className = "flex flex-col items-center mb-4">
                   <p className="font-bold text-[80px] leading-none">ACPC</p>
