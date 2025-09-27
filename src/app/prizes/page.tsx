@@ -1,6 +1,6 @@
 import QnA from "@/QnA/QnA";
 
-const prize_list = ["iPad",
+const prize_list = ["Pineapple Gift Set",
     "Airpod Pros",
     "Bose SoundLink Flex SE Portable Waterproof Bluetooth Speakers",
     "Gaming Keyboards & Mice",
@@ -8,6 +8,12 @@ const prize_list = ["iPad",
     "Poker Sets",
     "Owala Waterbottles",
     "Jellycat Stuffed Animals"]
+
+const categories = ["Overall Top 5",
+    "1st-2nd from graduate students",
+    "1st-3rd from juniors & seniors",
+    "1st-3rd from freshmen & sophomores",
+    "8 ad-hoc prizes"]
 
 export default function Prizes() {
     return (
@@ -38,7 +44,20 @@ export default function Prizes() {
                             ))}
 
                         </div>
-                        <QnA question="Misc Prizes" answer="???" ps={"e.g. \"First to solve A\""}/>
+                        <div className = "flex flex-col items-center group">
+                            <p className="transition-all leading-none text-xl opacity-50 group-hover:opacity-70 text-center">
+                                Prize Categories
+                            </p>
+                            {categories.map((item, i) => (
+                                <li className="list-none" key={i}>
+                                    <p className="transition-all leading-none text-xl opacity-80 group-hover:opacity-100 text-center">
+                                        {item}
+                                    </p>
+                                </li>
+                            ))}
+
+                        </div>
+                        <QnA question="Who gets what prize?" answer="In order of placement" ps={"1st picks first, 2nd picks second, etc."}/>
                     </div>
                 </div>
 

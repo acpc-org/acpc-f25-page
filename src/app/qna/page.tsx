@@ -22,7 +22,8 @@ export default function QnAPage() {
                         <QnA question="Allowed languages?" answer="Basically all" ps={"C++, Python, Java, basically anything on LC/CF"}/>
                         <QnA question="Is this a team contest?" answer="No" ps={"Please work individually. We have a team contest next semester"}/>
                         <QnA question="Non-material prizes?" answer="ICPC qualification & CSCE 430 access" ps={"Top performers may be able to force request into 430 and qualify to represent TAMU at ICPC"}/>
-                        </div>
+                        <QnA question="What's an ad-hoc prize?" answer="Bonus categories that anyone can win" ps={"e.g. \"First to solve A\", \"Submission that consumes the most memory\", etc."}/>
+                    </div>
                 </div>
 
             </div>
