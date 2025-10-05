@@ -3,6 +3,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
+
     <div className="flex flex-row font-sans items-center justify-center min-h-screen p-3 bg-[url('/poker.jpg')] bg-cover align-middle">
         <div className="flex flex-col items-center justify-items-center">
             <div className="mb-4 items-center justify-items-center p-6 bg-[#ffffffc0] dark:bg-[#000000c0] backdrop-blur-lg border-2 rounded-xl">
@@ -18,6 +19,9 @@ export default function Home() {
                     <QnA question="Food?" answer="Free pizza" ps={"(and snacks)"}/>
                 </div>
             </div>
+            <a href={"https://docs.google.com/document/d/1ShnclbhNNIDOcAIK1SB2i2hKoTTebiQWQVqSurM2Ei8/edit?usp=sharing"} className="transition-all rounded-2xl bg-[#dddddd] dark:bg-[#222222] p-3 pl-5 pr-5 border-2 mb-2 border-[#88888850] hover:border-[#888888AA] flex flex-row w-fit group">
+                <p className="transition-all text-clip font-light opacity-50 group-hover:opacity-80 group-hover:scale-[102%] group-active:scale-95 text-[#222222] dark:text-[#DDDDDD] text-3xl">Registration Instructions</p>
+            </a>
             <a href={"https://forms.gle/qfuu1N2CVouXyEr18"} className="transition-all rounded-2xl bg-[#dddddd] dark:bg-[#222222] p-3 pl-5 pr-5 border-2 border-[#88888850] hover:border-[#888888AA] flex flex-row w-fit group">
                 <p className="transition-all text-clip font-light opacity-50 group-hover:opacity-80 group-hover:scale-[102%] group-active:scale-95 text-[#222222] dark:text-[#DDDDDD] text-3xl">Sign Up</p>
             </a>
